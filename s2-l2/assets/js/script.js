@@ -149,6 +149,15 @@ console.log(carrello)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const prodotti = ['Penna', 'Quaderno', 'Zaino'];
+let cercato = 'Libro'
+console.log(`Zaino è nel carrello: ${prodotti.includes(cercato)}`)
+if ((prodotti.indexOf(cercato)) <= 0) {
+   console.log(`Prodotto non trovato`)
+} else {
+   console.log(prodotti.indexOf(cercato))
+}
+
 /* ESERCIZIO 11 — Lista utenti
    Array utenti di 3 oggetti { nome, eta }.
    Con un for, stampa ogni utente: 'Mario (25 anni)'.
