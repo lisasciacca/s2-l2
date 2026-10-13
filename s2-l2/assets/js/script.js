@@ -58,7 +58,8 @@ console.log(`CAP ${utente.indirizzo.cap}`)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-console.log(persona["nome"])
+const chiave ='nome'
+console.log(persona[chiave])
 
 /* ESERCIZIO 5 — Numero più grande
    Tre numeri a, b, c.
@@ -136,9 +137,11 @@ console.log(dati.length);
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 const carrello = ['Penna', 'Quaderno', 'Zaino', 'Astuccio'];
-console.log(carrello)
-carrello.splice(1,1,'Diario')
-console.log(carrello)
+console.log(carrello);
+carrello.splice(1,1,);
+console.log(carrello);
+carrello.splice(1,0,'Diario');
+console.log(carrello);
 
 /* ESERCIZIO 10 — Cerca un articolo
    Array prodotti = ['Penna', 'Quaderno', 'Zaino'].
@@ -151,8 +154,10 @@ console.log(carrello)
 
 const prodotti = ['Penna', 'Quaderno', 'Zaino'];
 let cercato = 'Libro'
+
 console.log(`Zaino è nel carrello: ${prodotti.includes(cercato)}`)
-if ((prodotti.indexOf(cercato)) <= 0) {
+
+if ((prodotti.indexOf(cercato)) < 0) {+
    console.log(`Prodotto non trovato`)
 } else {
    console.log(prodotti.indexOf(cercato))
